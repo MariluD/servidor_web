@@ -1,9 +1,13 @@
-<html>
-	<head>
-		<title>SERVIDOR WEB</title>
-	</head>
-	<body>
-		<p>Hi there!</p>
-		<p>It works!</p>
-	</body>
-</html>
+{% extends 'server/base.html' %}
+
+{% block content %}
+	{% for post in posts %}
+		<div class="post">
+		    <div class="date">
+		        SERVER WEB
+		    </div>
+		    <h1><a href="">FISQL</a></h1>
+		    <p>PROBANDO PLANTILLA</p>
+		</div>
+	{% endfor %}
+{% endblock content %}
